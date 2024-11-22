@@ -1,3 +1,4 @@
+/*set root colors*/
 :root {
     --primary-color: #141613;
     --secondary-color: #FF8325;
@@ -5,6 +6,7 @@
     --accent2-color: #CB4886;
 }
 
+/*select whole document attribute sizes and primary color*/
 * {
     background-color: var(--primary-color);
     margin: 0;
@@ -16,6 +18,7 @@
     text-decoration: none;
 } */
 
+/*Header logo and navigation links*/
 header .logo-box, nav {
     border: none;
     margin: 0;
@@ -23,15 +26,18 @@ header .logo-box, nav {
     text-decoration: none;
 }
 
+/*Header navigation links background color*/
 header a {
     background-color: transparent;
 }
 
+/*All sections border and margin*/
 section {
     border: 2px solid transparent;
     margin: 15px 0;
 }
 
+/*Hero section, image and article paragraph and image selectors*/
 .hero {
     position: relative;
     width: 100%;
@@ -62,6 +68,7 @@ section {
     width: 100%;
 }
 
+/*hero article paragraph and image selectors*/
 .hero article {
     position: absolute;
     top: 25%;
@@ -91,21 +98,25 @@ section {
     max-height: 100%;
 }
 
+/*Hero article paragraph scrollbar if paragraph is too long to fit*/
 .hero article p::-webkit-scrollbar {
     width: 8px;
 }
 
+/*scrollbar color and shape*/
 .hero article p::-webkit-scrollbar-thumb {
     background: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
 }
 
+/*history section*/
 .history {
     border: 2px solid transparent;
     border-image: linear-gradient(to right, var(--accent1-color) 50%, var(--accent2-color) 50%);
     border-image-slice: 1;
 }
 
+/*adventure awaits section*/
 .adventure-awaits {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -124,6 +135,7 @@ section {
     
 }
 
+/*adventure awaits image layout in declared grid*/
 .adventure-awaits img {
     width: 100%;
     height: auto;
@@ -133,6 +145,7 @@ section {
     grid-column: span 2;
 }
 
+/*History and Adventure awaits you! headings*/
 h2 {
     font-family: "Archivo Black";
     font-size: 2rem;
@@ -141,11 +154,13 @@ h2 {
     padding: 2rem 2rem 1rem 2rem;
 }
 
+/*history paragraph*/
 .history p {
     color: #efefef;
     padding: 1rem 2rem 2rem 2rem;
 }
 
+/*Footer selectors for color, image and navigation image links declarations*/
 footer p {
     background-color: var(--secondary-color);
 }
