@@ -19,16 +19,68 @@
 } */
 
 /*Header logo and navigation links*/
-header .logo-box, nav {
+
+header {
+    display: grid;
+    grid-template: 187px / 1fr 2fr;
+}
+
+header .logo-box{
     border: none;
     margin: 0;
     background-color: var(--secondary-color);
     text-decoration: none;
+    grid-row: 1;
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-box a:hover {
+    background-color: transparent;
+    color: transparent;
+}
+
+header nav {
+    background-color: var(--secondary-color);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: space-around; */
+    padding: 10px 0;
+    grid-row: 1;
+    grid-column: 2;
 }
 
 /*Header navigation links background color*/
 header a {
+    display: block;
     background-color: transparent;
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header a:hover {
+    background-color: #ffa74a;
+    color: var(--accent2-color);
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    header nav {
+        flex-direction: column;
+
+    }
+    header a {
+        text-align: center;
+        width: 100%;
+    }
 }
 
 /*All sections border and margin*/
@@ -111,9 +163,32 @@ section {
 
 /*history section*/
 .history {
+    position: relative;
+    display: grid;
+    grid-template: 1fr 2fr 1fr / 2fr 1fr 2fr;
     border: 2px solid transparent;
     border-image: linear-gradient(to right, var(--accent1-color) 50%, var(--accent2-color) 50%);
     border-image-slice: 1;
+}
+
+.history h2 {
+    grid-area: 1/1/2/4;
+    grid-row: span 3;
+}
+
+/*history paragraph*/
+.history p {
+    color: #efefef;
+    padding: 1rem 2rem 2rem 2rem;
+}
+
+.history img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    padding: 0 0 2rem 0;
 }
 
 /*adventure awaits section*/
@@ -154,14 +229,24 @@ h2 {
     padding: 2rem 2rem 1rem 2rem;
 }
 
-/*history paragraph*/
-.history p {
-    color: #efefef;
-    padding: 1rem 2rem 2rem 2rem;
+/*Footer selectors for color, image and navigation image links declarations*/
+footer {
+    display: grid;
+    grid-template: 1fr / 1fr 20px;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
 }
 
-/*Footer selectors for color, image and navigation image links declarations*/
 footer p {
+    display: flex;
+    background-color: var(--secondary-color);
+    justify-content: center;
+    align-self: center;
+}
+
+footer nav {
+    display: flex;
+    justify-content: flex-end;
     background-color: var(--secondary-color);
 }
 
