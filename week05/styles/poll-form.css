@@ -1,0 +1,137 @@
+/*select whole document attribute sizes and primary color*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*body selector for fonts*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+
+/*header selector flexed and aligned*/
+header {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 1.5rem;
+    width: 100%;
+}
+
+/*heading sized and aligned*/
+h1 {
+    margin: 1rem;
+    font-size: 2rem;
+    color: rgb(34, 34, 34);
+    text-align: center;
+}
+
+/*form selector sizing and grid display*/
+form {
+    width: 80%;
+    margin: 0 10% 5% auto;
+    padding: 0.5rem;
+    border: 2px solid rgb(195, 195, 195);
+    border-radius: 8px;
+    background-color: #e6e6e6;
+    display: grid;
+}
+
+/*fieldset display grid and setting of margin and border*/
+fieldset {
+    display: grid;
+    grid-gap: 0.5rem;
+    margin: 1rem;
+    border: 1px solid rgb(172, 172, 172);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+/*fieldset alignment and color and font size*/
+fieldset legend {
+    text-align: center;
+    color: rgb(60, 60, 60);
+    font-size: 1.3rem;
+}
+
+/*labels*/
+label {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: rgb(40, 40, 40);
+    text-align: right;
+    padding-right: 1rem;
+}
+
+/*labels and input font family*/
+label, input, button, select, textarea {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*inputs*/
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/*button selector color, margin, size and alignment*/
+button {
+    margin: 1rem auto;
+    background-color: rgb(51, 51, 254);
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    font-size: 1.2rem;
+    width: 150px;
+}
+
+/*button hover*/
+button:hover {
+    background-color: rgb(230, 0, 255);
+}
+
+/*footer selector align and size*/
+footer {
+    margin: 1rem auto 0;
+    width: 650px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: rgb(172, 172, 172);
+    border-top: 1px solid rgb(162, 162, 162);
+}
+
+/*form items*/
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+/*columns gridded*/
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+    margin: 0.5rem 0;
+}
+
+/*form item labels alinged to center*/
+.form-item label {
+    text-align: center;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<!--html code setup-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>WDD 130 | HTML Form - User Poll</title>
+        <link rel="stylesheet" href="styles/poll-form.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    </head>
+    <!--body-->
+    <body>
+        <header>
+            <h1>WDD 130 | HTML Form - User Poll</h1>
+        </header>
+        <!--main with form and form content-->
+        <main>
+            <form>
+                <!--fieldset content with legends and labels and inputs-->
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <!--divs with classes for form-item-->
+                    <div class="form-item column2">
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname">
+                    </div>
+                    <div class="form-item column2">
+                        <label for="useremail">Email:</label>
+                        <input type="email" id="useremail" name="useremail">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Questions</legend>
+                    <div class="form-item column1">
+                        <label for="browser">What is you favorite browser?</label>
+                        <select id="browser" name="browser">
+                            <option value="chrome">Chrome</option>
+                            <option value="firefox">Firefox</option>
+                            <option value="safari">Safari</option>
+                            <option value="edge">Edge</option>
+                            <option value="brave">Brave</option>
+                            <option value="other">Other</option>
+                    </select><br>
+                    </div>
+                    <div class="form-item column1">
+                        <label for="pet">Do you have a household pet?</label>
+                        <input type="checkbox" id="pet" name="pet"><br>
+                    </div>
+                    <div class="form-item">
+                        <label for="feedback">List the places you have lived:</label>
+                        <textarea id="feedback" name="feedback" rows="4" placeholder="Stillwater Florida, Amsterdam Netherlands, Tibuktu Mali"></textarea>
+                    </div>
+                </fieldset>
+                <!--submit button-->
+                <button type="submit">Submit Poll</button>
+            </form>
+        </main>
+        <!--footer copyright, name and document-->
+        <footer>
+            <p>&copy;2025 | HTML Form - User Poll Activity | Seryn Armstrong</p>
+        </footer>
+    </body>
+</html>
