@@ -249,9 +249,7 @@ h2 {
 }
 
 
-
-
-
+/*Contact Us Page Selectors*/
 h3 {
     color: #fff;
 }
@@ -260,6 +258,7 @@ section, p {
     color: #fff;
 }
 
+/*section boxes selectors*/
 .description-box, .find-us-box, .message-box, .contact-the-team {
     font-family: "Archivo", sans-serif;
     border: 2px solid transparent;
@@ -268,14 +267,15 @@ section, p {
     border-radius: 8px;
 }
 
-.description-box {
+/*Contact the Team*/
+.contact-the-team {
     display: flex;
     flex-direction: column;
     padding: 2rem 6rem;
     margin: 0.5rem 0 0 0;
 }
 
-.description-box p {
+.contact-the-team p {
     text-align: center;
     padding: 2rem 2rem 1rem 2rem;
 }
@@ -287,6 +287,7 @@ section, p {
     margin: 2rem;
 }
 
+/*Happy employees and their titles*/
 .happy-employee-box {
     display: flex;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -301,12 +302,14 @@ section, p {
     border-radius: 5px;
 }
 
+/*Adjust for smaller screen to stack atop each other*/
 @media (max-width: 700px) {
     .happy-employee-box {
         flex-direction: column; /* Stack vertically on smaller screens */
     }
 }
 
+/*Map and contact info of the company*/
 .find-us-box {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -346,8 +349,7 @@ iframe {
 }
 
 
-
-
+/*Contact message box*/
 .message-box {
     padding-top: 2rem;
     background-color: var(--accent1-color);
@@ -368,6 +370,7 @@ form {
     display: grid;
 }
 
+/*Form message box and inputs*/
 form div {
     background-color: #fff;
 }
@@ -407,11 +410,29 @@ input[type="text"] {
     align-items: center;
 }
 
+/*Field sets*/
 fieldset h3 {
     text-align: center;
     background-color: #fff;
     color: #174A3F;
     font-size: 20px;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: 0.5rem;
+    margin: 1rem;
+    border: 1px solid #3ca38d;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+fieldset legend {
+    text-align: center;
+    color: #174A3F;
+    font-size: 1.3rem;
+    background-color: #fff;
 }
 
 .column2 {
@@ -446,23 +467,6 @@ input[type="radio"] {
     border-color: #174A3F;
 }
 
-fieldset {
-    display: grid;
-    grid-gap: 0.5rem;
-    margin: 1rem;
-    border: 1px solid #3ca38d;
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 1rem;
-}
-
-fieldset legend {
-    text-align: center;
-    color: #174A3F;
-    font-size: 1.3rem;
-    background-color: #fff;
-}
-
 label {
     font-size: 1.1rem;
     color: #174A3F;
@@ -477,6 +481,7 @@ input, textarea {
     background-color: #fff;
 }
 
+/*subscribe checkbox*/
 .subscribe {
     display: flex;
     justify-content: center;
@@ -488,6 +493,7 @@ input[type="checkbox"] {
     color: #174A3F;
 }
 
+/*Button to submit*/
 button {
     margin: 1rem auto;
     background-color: #732147;
