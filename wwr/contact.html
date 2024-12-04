@@ -1,0 +1,165 @@
+<!--declair as html document type-->
+<!DOCTYPE html>
+
+<!--Set language to be en-US and basic html structure-->
+<html lang="en-US">
+    <head>
+        <!--meta tags for viewport and author and description and links to font apis and stylesheet-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rapid Rafters Contact Us</title>
+        <meta name="description" content="Our Rapid Rafters' Whitewater Rafting site Contact Us page. Ask questions about our services and our company.">
+        <meta name="author" content="Seryn Paige Armstrong">
+        <link rel="stylesheet" href="styles/rafting.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--Header content-->
+        <header>
+            <!--logo-->
+            <div class="logo-box">
+                <a href="/index.html"><img src="images/rapids_logo2.webp" alt="logo"></a>
+            </div>
+            <!--Navigation links-->
+            <nav>
+                <a href="/index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="trips.html">Trips</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </header>
+        <!--Main content-->
+        <main>
+            <section class="description-box">
+                <div class="contact-the-team">
+                    <h1>Contact the Team</h1>
+
+                    <p>
+                        We love questions and feedback, and we're always happy to help!<br>
+                        Here are some ways you can contact us.
+                    </p>
+
+                    </div>
+                <div class="happy-employee-box">
+                    <!--Figures and figcations-->
+                    <figure>
+                        <img src="images/happy-employee1.webp" alt="Happy Employee1">
+                        <figcaption>River Guide Extraordinaire</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/happy-employees2.webp" alt="Happy Employees2">
+                        <figcaption>Rafting Adventure Coordinators</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/happy-employee3.webp" alt="Happy Employee3">
+                        <figcaption>Safety Officer</figcaption>
+                    </figure>
+                </div>
+        </section>
+            <section class="find-us-box">
+                <div class="find-us-heading">
+                    <h2>Headquarters</h2>
+                </div>
+                <div class="place">
+
+                    <h3>Idaho, USA</h3>
+
+                    <p>Salmon River, Idaho, USA</p>
+                    <p>Email: <a href="mailto:">serynarmstron@gmail.com</a></p>
+                    <p>Phone: 999-999-9999</p>
+                </div>
+                <div class="map">
+                    <aside>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58154.05659371205!2d-115.53292837847145!3d45.37541698660785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5358158fba1f72dd%3A0xb0a9f6599feec377!2sSalmon%20River!5e0!3m2!1sen!2sza!4v1733294927663!5m2!1sen!2sza" 
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </aside>
+                </div>
+
+            </section>
+            <section class="message-box">
+                <form>
+                    <h2>Send Us a Message</h2>
+
+                    <p>Send us a message and we'll respond within 24 hours.</p>
+                    <!--fieldset content with legends and labels and inputs-->
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <!--divs with classes for form-item-->
+                        <div class="form-item column1">
+                            <div class="name-container">
+                                <div>
+                                    <label for="fname">First Name:</label>
+                                    <input type="text" id="fname" name="fname">
+                                </div>
+                                <div>
+                                    <label for="lname">Last Name:</label>
+                                <input type="text" id="lname" name="lname">
+                                </div>
+                            </div>                      
+                            <label for="useremail">Email:</label>
+                            <input type="email" id="useremail" name="useremail">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Message</legend>
+                        <h3>Purpose of Message</h3><br>
+                        <div class="form-item column2">
+                            
+                            <div class="item">
+                                <label for="general-inquiry">General Inquiry</label>
+                                <input type="radio" id="general-inquiry" name="inquiry" value="general"><br>
+                            </div>
+
+                            <div class="item">
+                                <label for="reservation-question">Reservation Question</label>
+                                <input type="radio" id="reservation-question" name="inquiry" value="reservation"><br>
+                            </div>
+
+                            <div class="item">
+                                <label for="website-suggestion">Website Suggestion</label>
+                                <input type="radio" id="website-suggestion" name="inquiry" value="suggestion"><br>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="message">
+                            <label for="message">Enter Your Message:</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Type your message"></textarea>
+                        </div>
+                    </fieldset>
+                    <div class="subscribe">
+                        <label for="subscribe">Please subscribe me to the monthly newsletter:</label><br>
+                        <input type="checkbox" id="subscribe" name="subscribe"><br>
+                    </div>
+                    <!--submit button-->
+                    <button type="submit">Submit</button>
+                </form>
+        
+            </section>
+           
+        </main>
+        <!--Footer content-->
+        <footer>
+            <!--Copyright, company name and author name and social media image links-->
+            <p>
+                &copy; 2024 | Rapid Rafters | Seryn Paige Armstrong
+            </p>
+            <nav class="sociallinks">
+                <a href="https://facebook.com">
+                    <img src="images/3225194_app_facebook_logo_media_popular_icon.svg" alt="Facebook">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="images/11053969_x_logo_twitter_new_brand_icon.svg" alt="Twitter">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="images/3225191_app_instagram_logo_media_popular_icon.svg" alt="Instagram">
+                </a>
+            </nav>
+            <!---->
+            <nav class="contact-us-wireframe-link">
+                <a href="https://app.moqups.com/e241PAV6mC2CXtLW8VdDi623iqMqCf2H/view/page/ad12de680">Contact Us</a>
+            </nav>
+        </footer>    
+    </body>
+</html>
