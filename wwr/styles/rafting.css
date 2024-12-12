@@ -197,6 +197,13 @@ h1 {
     gap: 1.5rem;
 }
 
+.button-link {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
 /*Telnumber*/
 .call-num-container {
     display: grid;
@@ -360,7 +367,7 @@ h1 {
 }
 
 /*History and Adventure awaits you! headings*/
-h2 {
+h2, table th {
     font-family: "Archivo Black";
     font-size: 2rem;
     text-align: center;
@@ -381,6 +388,7 @@ h2 {
     padding: 4rem;
     white-space: wrap;
     scroll-behavior: smooth;
+    color: #fff;
 }
 
 .trip-description-container::-webkit-scrollbar {
@@ -686,7 +694,7 @@ input[type="checkbox"] {
 }
 
 /*Button to submit*/
-button {
+button, .button-link {
     margin: 1rem auto;
     background-color: #732147;
     color: #fff;
@@ -698,7 +706,7 @@ button {
     width: 300px;
 }
 
-button:hover {
+button:hover, .button-link:hover {
     background-color: var(--accent1-color);
     cursor: pointer;
 }
