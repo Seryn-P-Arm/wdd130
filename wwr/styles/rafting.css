@@ -91,7 +91,7 @@ section {
 .hero {
     position: relative;
     width: 100%;
-    max-height: 400px;
+    max-height: 600px;
     overflow: hidden;
     align-items: center;
     display: block;
@@ -105,13 +105,19 @@ section {
 }
 
 /*Hero heading*/
-.hero h1 {
+.hero .about h1, .home h1 {
     position: absolute;
     top: 10%;
     left: 0;
     right: 0;
     text-shadow: 2px 2px 8px rgba(0, 0, 0 , 0.7);
     z-index: 2;
+}
+
+/*Hero message heading index page*/
+.hero .home h1 {
+    top: 45%;
+    font-size: 3rem;
 }
 
 /*Contact us heading*/
@@ -136,9 +142,10 @@ h1 {
     border: 2px solid transparent;
     border-image: linear-gradient(to right, var(--accent1-color) 50%, var(--accent2-color) 50%);
     border-image-slice: 1;
-    padding: 1.5rem;
+    padding: 2rem;
     max-width: 94%;
     text-align: left;
+    font-size: large;
     z-index: 2;
 }
 
@@ -147,7 +154,7 @@ h1 {
     float: right;
     margin-left: 1rem;
     width: auto;
-    height: 149px;
+    height: 225px;
 }
 
 /*Hero article paragraph*/
@@ -166,6 +173,113 @@ h1 {
 .hero article p::-webkit-scrollbar-thumb {
     background: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
+}
+
+/*Index page sections border*/
+.booking-box, .purpose-offerings-container {
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, var(--accent1-color) 50%, var(--accent2-color) 50%);
+    border-image-slice: 1; 
+}
+
+.booking-box {
+    display: flex;
+    flex: 2fr 1fr;
+    padding: 1rem 1rem 0 2rem;
+}
+
+.booking-box p {
+   padding: 1rem;
+}
+
+.visit-trips {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.call-num-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 0 12rem 0 2rem;
+}
+
+.number {
+    color: #BCA8FF;
+    text-decoration: none;
+}
+
+.icon {
+    grid-column: 1;
+    width: 30px;
+    height: auto;
+}
+
+.content, .icon {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.content {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Newsletter Sign Up Form*/
+.newsletter-sign-up-box {
+    padding: 2rem;
+}
+
+.newsletter-form {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Booking-box section*/
+.booking-box {
+    display: flex;
+    padding: 1rem 1rem 0 2rem;
+}
+
+.booking-box p {
+   padding: 1rem;
+}
+
+/*Media declaration for smaller screens*/
+@media (max-width: 768px) {
+    .booking-box {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+    }
+    .newsletter-sign-up-box {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.newsletter-form button {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.purpose-offerings-container {
+    padding: 2rem;
+}
+
+.purpose-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.purpose-images img {
+    width: 100%;
+    padding: 2rem;
+}
+
+.purpose-offerings-container p, .get-in-touch-container p {
+    padding: 1rem 2rem;
 }
 
 /*history section gridded*/
@@ -211,7 +325,7 @@ h1 {
     padding: 0 6rem 2rem 6rem;
 }
 
-/*Adventure awaitd heading*/
+/*Adventure awaits heading*/
 .adventure-awaits h2 {
     grid-column: span 5;
     text-align: center;
@@ -248,6 +362,78 @@ h2 {
     padding: 2rem 2rem 1rem 2rem;
 }
 
+/*Trips Page Secions*/
+.get-in-touch-container {
+    text-align: center;
+    padding: 0 2rem 2rem 2rem;
+}
+
+.trip-description-container {
+    display: flex;
+    gap: 3rem;
+    overflow-x: auto;
+    padding: 2rem;
+    white-space: wrap;
+    scroll-behavior: smooth;
+}
+
+.trip-description-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.trip-description-container::-webkit-scrollbar-thumb {
+    background: #c7c7c7e6;
+    border-radius: 10px;
+    cursor: grab;
+}
+
+.trip-description-container figure {
+    flex: 0 0 auto;
+    text-align: center;
+    max-width: 400px;
+}
+
+.trip-description-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.trip-description-container figcaption {
+    margin-top: 0.5rem;
+}
+
+.available-trips-container{
+    padding: 0 1rem;
+}
+
+.available-trips-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    border-spacing: 6rem;
+}
+
+table td {
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, var(--accent1-color) 50%, var(--accent2-color) 50%);
+    border-image-slice: 1;
+    text-wrap: wrap;
+    padding: 2rem;
+    text-align: center;
+}
+
+.disclaimer td {
+    border: none;
+    padding: 0;
+}
+
+td p {
+    padding: 2rem;
+}
 
 /*Contact Us Page Selectors*/
 h3 {
@@ -259,7 +445,7 @@ section, p {
 }
 
 /*section boxes selectors*/
-.description-box, .find-us-box, .message-box, .contact-the-team {
+.description-box, .find-us-box, .message-box, .contact-the-team, .get-in-touch-container, .trip-description-container, .available-trips-container {
     font-family: "Archivo", sans-serif;
     border: 2px solid transparent;
     border-image: linear-gradient(to right, var(--accent1-color) 50%, var(--accent2-color) 50%);
@@ -381,7 +567,7 @@ form p {
     padding: 1rem 0;
 }
 
-input[type="text"], input[type="email"] {
+input[type="text"], input[type="email"], input[type="tel"] {
     width: 100%;
     box-sizing: border-box;
     background-color: #fff;
@@ -411,14 +597,14 @@ input[type="text"] {
 }
 
 /*Field sets*/
-fieldset h3 {
+fieldset h3, .newsletter-form h3 {
     text-align: center;
     background-color: #fff;
     color: #174A3F;
     font-size: 20px;
 }
 
-fieldset {
+fieldset, .newsletter-form {
     display: grid;
     grid-gap: 0.5rem;
     margin: 1rem;
@@ -552,7 +738,7 @@ footer a {
 }
 
 /*contact us wireframe link*/
-footer .contact-us-wireframe-link {
+footer .contact-us-wireframe-link, footer .trips-wireframe-link {
     grid-row: 2;
     grid-column: 1;
     display: flex;
