@@ -189,7 +189,6 @@ article h3 {
 
 .booking-box {
     display: flex;
-    flex: 2fr 1fr;
     padding: 1rem 1rem 0 2rem;
 }
 
