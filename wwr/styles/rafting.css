@@ -374,7 +374,7 @@ h2 {
     display: flex;
     gap: 3rem;
     overflow-x: auto;
-    padding: 2rem;
+    padding: 4rem;
     white-space: wrap;
     scroll-behavior: smooth;
 }
