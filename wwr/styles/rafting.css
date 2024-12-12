@@ -280,6 +280,10 @@ h1 {
     padding: 2rem;
 }
 
+.get-in-touch-container h1 {
+    padding-top: 2rem;
+}
+
 .purpose-offerings-container p, .get-in-touch-container p {
     padding: 1rem 2rem;
 }
