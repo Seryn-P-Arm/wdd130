@@ -478,6 +478,7 @@ section, p {
 /*Happy employees and their titles*/
 .happy-employee-box {
     display: flex;
+    justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 3rem;
     padding: 2rem;
@@ -535,7 +536,6 @@ iframe {
     max-width: 800px;
     width: 100%;
 }
-
 
 /*Contact message box*/
 .message-box {
