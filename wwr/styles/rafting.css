@@ -455,8 +455,12 @@ table td {
     padding: 0;
 }
 
-td p {
+.disclaimer p {
     padding: 0 2rem;
+}
+
+td p {
+    padding: 2rem;
 }
 
 /*Contact Us Page Selectors*/
