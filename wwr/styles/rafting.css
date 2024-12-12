@@ -157,6 +157,11 @@ h1 {
     height: 225px;
 }
 
+article h3 {
+    background-color: transparent;
+    padding-bottom: 1rem;
+}
+
 /*Hero article paragraph*/
 .hero article p {
     background-color: transparent;
