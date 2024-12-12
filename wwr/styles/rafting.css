@@ -373,12 +373,16 @@ article h3 {
 }
 
 /*History and Adventure awaits you! headings*/
-h2, table th {
+h2, table caption {
     font-family: "Archivo Black";
     font-size: 2rem;
     text-align: center;
     color: #efefef;
     padding: 2rem 2rem 1rem 2rem;
+}
+
+table caption {
+    padding-top: 2.5rem;
 }
 
 /*Trips Page Secions*/
@@ -452,7 +456,7 @@ table td {
 }
 
 td p {
-    padding: 2rem;
+    padding: 0 2rem;
 }
 
 /*Contact Us Page Selectors*/
