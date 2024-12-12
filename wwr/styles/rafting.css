@@ -155,6 +155,7 @@ h1 {
     margin-left: 1rem;
     width: auto;
     height: 225px;
+    border-radius: 5px;
 }
 
 article h3 {
@@ -329,6 +330,7 @@ article h3 {
     align-self: center;
     justify-self: center;
     padding: 0 0 2rem 0;
+    border-radius: 5px;
 }
 
 /*adventure awaits section grid*/
